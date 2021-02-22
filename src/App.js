@@ -145,7 +145,8 @@ function App() {
   }, [])
 
   const fetchData = async (url, layerOptions) => {
-    if (mapRef.current.getZoom() > layerOptions.maxZoom) {
+    var currentZoom = mapRef.current.getZoom()
+    if (currentZoom >= layerOptions.maxZoom && currentZoom <= (layerOptions.minZoom || 20 )) {
       const response = await fetchWithTimeout(url)
       const body = await response.json()
       return Leaflet.geoJson(body, layerOptions)
