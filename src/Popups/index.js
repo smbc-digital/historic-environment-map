@@ -61,7 +61,7 @@ const Article4_1_direction_Popup = (feature, layer) => {
 const Article4_2_direction_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
-    <i class="fa fa-tag smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
     <h2 class="smbc-map__item__header__block__title">Article 4-2 Direction</h2>
   </div>
   <div class="smbc-map__item__body">
