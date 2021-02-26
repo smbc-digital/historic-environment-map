@@ -1,78 +1,101 @@
 const Locally_listed_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Locally Listed Building</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.name}</p>
-    <p class="info">Type: ${feature.properties.type}</p>
-    <p class="info">Committee: ${feature.properties.committee}</p>
-    <p class="info">Ward: ${feature.properties.ward}</p>
-    <p></p>
-    <p class="title"><a href="${feature.properties.web_db_link}" target="_blank">Further Information</a></p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Locally Listed Building</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.name}</p>
+    <p>Type: ${feature.properties.type}</p>
+    <p>Committee: ${feature.properties.committee}</p>
+    <p>Ward: ${feature.properties.ward}</p>
+    <a href="${feature.properties.web_db_link}" target="_blank">Further Information</a>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Statutory_listed_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Statutory Listed Building</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.name}</p>
-    <p class="info">Type: ${feature.properties.type}</p>
-    <p class="info">Grade: ${feature.properties.grade}</p>
-    <p class="info">Committee: ${feature.properties.committee}</p>
-    <p class="info">Ward: ${feature.properties.ward}</p>
-    <p></p>
-    <p class="title"><a href="${feature.properties.web_db_link}" target="_blank"> Further Information</a></p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Statutory Listed Building</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.name}</p>
+    <p>Type: ${feature.properties.type}</p>
+    <p>Grade: ${feature.properties.grade}</p>
+    <p>Committee: ${feature.properties.committee}</p>
+    <p>Ward: ${feature.properties.ward}</p>
+    <a href="${feature.properties.web_db_link}" target="_blank"> Further Information</a>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Conservation_area_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-tag" aria-hidden="true"></i><p class="title">Conservation Area</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.cons_area}</p>
-    <p></p>
-    <p class="title"><a href="${feature.properties.web_info_link}" target="_blank">Further Information</a></p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-tag smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Conservation Area</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.cons_area}</p>
+    <a href="${feature.properties.web_info_link}" target="_blank">Further Information</a>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Article4_1_direction_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Article 4-1 Direction</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.conservation_area}</p>
-    <p class="info">Type: ${feature.properties.type}</p>
-    <p></p>
-    <p class="title"><a href="${feature.properties.web_db_link}" target="_blank">Further Information</a></p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Article 4-1 Direction</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.conservation_area}</p>
+    <p>Type: ${feature.properties.type}</p>
+    <a href="${feature.properties.web_db_link}" target="_blank">Further Information</a>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Article4_2_direction_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Article 4-2 Direction</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.conservation_area}</p>
-    <p class="info">Type: ${feature.properties.type}</p>
-    <p></p>
-    <p class="title"><a href="${feature.properties.web_db_link}" target="_blank">Further Information</a></p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Article 4-2 Direction</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.conservation_area}</p>
+    <p>Type: ${feature.properties.type}</p>
+    <a href="${feature.properties.web_db_link}" target="_blank">Further Information</a>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Scheduled_monument_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-university" aria-hidden="true"></i><p class="title">Scheduled Monument</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.name}</p>
-    <p class="info">National Monument No: ${feature.properties.national_monument_no}</p>
-    <p class="title">${feature.properties.web_db_link}</p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-university smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Scheduled Monument</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.name}</p>
+    <p>National Monument No: ${feature.properties.national_monument_no}</p>
+    <p>${feature.properties.web_db_link}</p>
+    </div></div>`
   layer.bindPopup(content)
 }
 
 const Historic_Parks_Gardens_Popup = (feature, layer) => {
-  const content = `<div class="item"><i class="fa fa-tree" aria-hidden="true"></i><p class="title">Registered Historic Park or Garden</p>
-    <p></p>
-    <p class="info">Name: ${feature.properties.site}</p>
-    <p class="title">${feature.properties.web_db_link}</p>
-    </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-tree smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <h2 class="smbc-map__item__header__block__title">Registered Historic Park or Garden</h2>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.site}</p>
+    <p>${feature.properties.web_db_link}</p>
+    </div></div>`
   layer.bindPopup(content)
 }
 
