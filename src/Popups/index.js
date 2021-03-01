@@ -2,7 +2,7 @@ const Locally_listed_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Locally Listed Building</h2>
+    <span class="smbc-map__item__header__block__title">Locally Listed Building</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.name}</p>
@@ -18,7 +18,7 @@ const Statutory_listed_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Statutory Listed Building</h2>
+    <span class="smbc-map__item__header__block__title">Statutory Listed Building</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.name}</p>
@@ -35,7 +35,7 @@ const Conservation_area_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-tag smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Conservation Area</h2>
+    <span class="smbc-map__item__header__block__title">Conservation Area</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.cons_area}</p>
@@ -48,7 +48,7 @@ const Article4_1_direction_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Article 4-1 Direction</h2>
+    <span class="smbc-map__item__header__block__title">Article 4-1 Direction</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.conservation_area}</p>
@@ -62,7 +62,7 @@ const Article4_2_direction_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Article 4-2 Direction</h2>
+    <span class="smbc-map__item__header__block__title">Article 4-2 Direction</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.conservation_area}</p>
@@ -76,7 +76,7 @@ const Scheduled_monument_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-university smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Scheduled Monument</h2>
+    <span class="smbc-map__item__header__block__title">Scheduled Monument</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.name}</p>
@@ -90,7 +90,7 @@ const Historic_Parks_Gardens_Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-tree smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <h2 class="smbc-map__item__header__block__title">Registered Historic Park or Garden</h2>
+    <span class="smbc-map__item__header__block__title">Registered Historic Park or Garden</span>
   </div>
   <div class="smbc-map__item__body">
     <p>Name: ${feature.properties.site}</p>
